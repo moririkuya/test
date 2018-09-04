@@ -22,11 +22,11 @@
                      Padding="0,20,0,20"
                      Spacing="0"
                      >
-           <Button x:Name="checkB"  Text="O" FontSize="Default" BackgroundColor="White" WidthRequest="30" HeightRequest="15" ContentLayout="0"/>
-           <Button x:Name="kiyakuB"  Text="利用規約" TextColor="Fuchsia" FontSize="Default" BackgroundColor="White" HeightRequest="15" ContentLayout="0"/>
+           <Button x:Name="checkB"  Text="O"  BackgroundColor="White" WidthRequest="30" HeightRequest="15" ContentLayout="0"/>
+           <Button x:Name="kiyakuB"  Text="利用規約" TextColor="Fuchsia" FontSize="Small" BackgroundColor="White" HeightRequest="15" ContentLayout="0"/>
            <Label Text="・" FontSize="Default" />
-           <Button x:Name="privacyB" Text="プライバシーポリシー" TextColor="Fuchsia" FontSize="Default" BackgroundColor="white" HeightRequest="15" ContentLayout="0"/>
-            <Label Text="に同意" FontSize="Default" />
+           <Button x:Name="privacyB" Text="プライバシーポリシー" TextColor="Fuchsia" FontSize="Small" BackgroundColor="white" HeightRequest="15" ContentLayout="0"/>
+            <Label Text="に同意" FontSize="Small" />
         </StackLayout>
         
         <Button Text="登録して始める" VerticalOptions="End" 
