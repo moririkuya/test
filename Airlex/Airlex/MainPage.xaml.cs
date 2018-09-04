@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+
+namespace Airlex
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            test.Clicked += Test_Clicked;
+        }
+
+        void Test_Clicked(object sender, EventArgs e)
+        {
+        }
+
+    }
+}
