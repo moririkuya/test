@@ -22,10 +22,10 @@
                      Spacing="1"
                      Padding="30,0,30,0"
                      >
-           <Button x:Name="test"  Text="O"/>
-           <Button x:Name="kiyakuB"  Text="利用規約" FontSize="Micro" />
+           <Button x:Name="test"  Text="O" BackgroundColor="White"/>
+           <Button x:Name="kiyakuB"  Text="利用規約" FontSize="Micro" TextColor="Fuchsia" BackgroundColor="White"/>
            <Label Text="・" FontSize="Micro" />
-           <Button x:Name="privacyB" Text="プライバシーポリシー" FontSize="Micro" />
+           <Button x:Name="privacyB" Text="プライバシーポリシー" FontSize="Micro" TextColor="Fuchsia" BackgroundColor="White"/>
             <Label Text="に同意" FontSize="Micro" />
         </StackLayout>
         
