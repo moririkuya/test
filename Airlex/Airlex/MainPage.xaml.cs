@@ -13,12 +13,10 @@ namespace Airlex
         public MainPage()
         {
             InitializeComponent();
-            test.Clicked += Test_Clicked;
+
         }
 
-        void Test_Clicked(object sender, EventArgs e)
-        {
-        }
+       
 
     }
 }
