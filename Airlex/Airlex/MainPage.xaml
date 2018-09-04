@@ -8,24 +8,25 @@
     BackgroundImage="">
     <StackLayout
         Spacing="10"
-        Padding="20,100,20,120"
+        Padding="30,100,20,20"
         VerticalOptions="End"
         Orientation="Vertical"
         >
         <!-- Place new controls here -->
        
-        <Entry x:Name="addressE"  Placeholder="メールアドレス" VerticalOptions="Start"/>
-        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" />
-        <Entry x:Name="passEC" IsEnabled="true" Placeholder="パスワード(確認)" />
+        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14"/>
+        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14"/>
+        <Entry x:Name="passEC" IsEnabled="true" Placeholder="パスワード(確認)" FontSize="14"/>
         
         <StackLayout Orientation="Horizontal"
-                     Padding="10,20,0,20"
+                     Padding="0,20,0,20"
+                     Spacing="0"
                      >
-           <Button x:Name="checkB"  Text="O" FontSize="Micro" BackgroundColor="White" WidthRequest="20" HeightRequest="20" />
-           <Button x:Name="kiyakuB"  Text="利用規約" TextColor="Fuchsia" FontSize="14" BackgroundColor="White" HeightRequest="20"/>
-           <Label Text="・" FontSize="14" />
-           <Button x:Name="privacyB" Text="プライバシーポリシー" TextColor="Fuchsia" FontSize="14" BackgroundColor="white" HeightRequest="20"/>
-            <Label Text="に同意" FontSize="14" />
+           <Button x:Name="checkB"  Text="O" FontSize="Default" BackgroundColor="White" WidthRequest="30" HeightRequest="15" ContentLayout="0"/>
+           <Button x:Name="kiyakuB"  Text="利用規約" TextColor="Fuchsia" FontSize="Default" BackgroundColor="White" HeightRequest="15" ContentLayout="0"/>
+           <Label Text="・" FontSize="Default" />
+           <Button x:Name="privacyB" Text="プライバシーポリシー" TextColor="Fuchsia" FontSize="Default" BackgroundColor="white" HeightRequest="15" ContentLayout="0"/>
+            <Label Text="に同意" FontSize="Default" />
         </StackLayout>
         
         <Button Text="登録して始める" VerticalOptions="End" 
@@ -37,7 +38,7 @@
         <Button Text="登録済の方はこちら"
                 x:Name="tourokuzumiB"
                 TextColor="Fuchsia" BackgroundColor="white"
-                HeightRequest="30"
+                HeightRequest="40"
                 />
             </StackLayout>
     </StackLayout>
