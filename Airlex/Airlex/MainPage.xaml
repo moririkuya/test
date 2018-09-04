@@ -8,7 +8,7 @@
     BackgroundImage="">
     <StackLayout
         Spacing="10"
-        Padding="20,100,20,60"
+        Padding="20,100,20,120"
         VerticalOptions="End"
         Orientation="Vertical"
         >
@@ -19,12 +19,13 @@
         <Entry x:Name="passEC" IsEnabled="true" Placeholder=" パスワード(確認)"/>
         
         <StackLayout Orientation="Horizontal"
-                     Spacing="10"
-                     Padding="15,0,15,0"
+                     Spacing="0"
+                     Padding="30,0,0,0"
                      >
-           <Button x:Name="kiyakuB"  Text="利用規約" FontSize="Micro"/>
+           <Button x:Name="checkB"  Text="O" FontSize="Micro" BackgroundColor="White" WidthRequest="20" Margin="0,0,10,0"/>
+           <Button x:Name="kiyakuB"  Text="利用規約" TextColor="Fuchsia" FontSize="Micro" BackgroundColor="White"/>
            <Label Text="・" FontSize="Micro" />
-           <Button x:Name="privacyB" Text="プライバシーポリシー" />
+           <Button x:Name="privacyB" Text="プライバシーポリシー" TextColor="Fuchsia" FontSize="Micro" BackgroundColor="White"/>
             <Label Text="に同意" FontSize="Micro" />
         </StackLayout>
         
