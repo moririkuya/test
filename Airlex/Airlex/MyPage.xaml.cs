@@ -1,7 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows;
+
+
+
 
 namespace Airlex
 {
@@ -10,7 +18,10 @@ namespace Airlex
         public MyPage()
         {
             InitializeComponent();
-            faceV.Source = ImageSource.FromResource("Airlex.image.face.png");
+
+
+
+
 
         }
     }

@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             
              x:Class="Airlex.MyPage"
-             BackgroundColor="White">
-    <StackLayout
-        Orientation="Vertical"
-        VerticalOptions="Center">
-        <Image x:Name="faceV"
-               
-               />
-       
+             >
+    
+    <AbsoluteLayout >
+        <Image  AbsoluteLayout.LayoutBounds=".3,.168,.3,.7" AbsoluteLayout.LayoutFlags="All"
+    Source="face.png"/>
+    </AbsoluteLayout>
+    
         
         
-    </StackLayout>
-    <ContentPage.Content>
-    </ContentPage.Content>
+    
+    
 </ContentPage>
