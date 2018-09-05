@@ -17,18 +17,23 @@ namespace Airlex
         {
             InitializeComponent();
             Double FS = 0;
+
             switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
                     FS = 14;
+                    kiyakuSL.Padding =20;
                     break;
                 case Device.Android:
                     FS = 12;
+                    kiyakuSL.Padding = 0;
+
                     break;
             }
 
             kiyakuB.FontSize = FS;
             privacyB.FontSize = FS;
+
 
 
         }
