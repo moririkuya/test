@@ -5,7 +5,7 @@
              >
     
     <AbsoluteLayout >
-        <Image  AbsoluteLayout.LayoutBounds=".3,.168,.3,.7" AbsoluteLayout.LayoutFlags="All"
+        <Image  AbsoluteLayout.LayoutBounds=".5,.1,.5,.9" AbsoluteLayout.LayoutFlags="All"
     Source="face.png"/>
     </AbsoluteLayout>
     
