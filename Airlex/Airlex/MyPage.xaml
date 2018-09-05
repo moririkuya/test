@@ -3,9 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              
              x:Class="Airlex.MyPage"
-             BackgroundColor="white">
-    <StackLayout>
-        <BoxView />
+             BackgroundColor="White">
+    <StackLayout
+        Orientation="Vertical"
+        VerticalOptions="Center">
+        <Image x:Name="faceV"
+               
+               />
+       
         
         
     </StackLayout>

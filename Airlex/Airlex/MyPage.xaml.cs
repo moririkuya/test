@@ -10,6 +10,8 @@ namespace Airlex
         public MyPage()
         {
             InitializeComponent();
+            faceV.Source = ImageSource.FromResource("Airlex.image.face.png");
+
         }
     }
 }
