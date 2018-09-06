@@ -2,12 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Airlex.MyPage"
+             BackgroundColor="White"
              >
     
     <AbsoluteLayout >
-        <Image  AbsoluteLayout.LayoutBounds=".5,.1,.5,.9" AbsoluteLayout.LayoutFlags="All"
+        <Image  AbsoluteLayout.LayoutBounds=".5,.264,.4,.225" AbsoluteLayout.LayoutFlags="All"
     Source="face.png"/>
+        
+        <Image  AbsoluteLayout.LayoutBounds=".5,.776,.192,.108" AbsoluteLayout.LayoutFlags="All"     Source="phoneM.png"/>
+       
+        
+        
+        
+       
     </AbsoluteLayout>
+    
     
         
         
