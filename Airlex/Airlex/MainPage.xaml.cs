@@ -8,11 +8,12 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows;
 
-
 namespace Airlex
 {
     public partial class MainPage : ContentPage
     {
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -22,23 +23,30 @@ namespace Airlex
             {
                 case Device.iOS:
                     FS = 14;
-                    kiyakuSL.Padding =20;
+                    kiyakuSL.Padding = 20;
                     break;
                 case Device.Android:
                     FS = 12;
                     kiyakuSL.Padding = 0;
 
                     break;
+
             }
 
             kiyakuB.FontSize = FS;
             privacyB.FontSize = FS;
 
 
-
         }
 
+
+        private async void Mypagego(object sender, EventArgs e)
+        {
+            
+            await this.Navigation.PushAsync(new MyPage());
+        }
        
+
 
     }
 }

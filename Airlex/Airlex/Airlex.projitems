@@ -17,6 +17,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)image\phoneM.png" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)image\face.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)listPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -27,6 +31,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MyPage.xaml.cs">
       <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)listPage.xaml.cs">
+      <DependentUpon>listPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

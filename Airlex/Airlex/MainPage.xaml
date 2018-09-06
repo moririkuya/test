@@ -30,7 +30,8 @@
             <Label Text="に同意" FontSize="Small" />
         </StackLayout>
         
-        <Button Text="登録して始める" VerticalOptions="End" 
+        <Button Clicked="Mypagego"
+            Text="登録して始める" VerticalOptions="End" 
                 TextColor="White" BackgroundColor="Gray"/>
         <StackLayout
             Orientation="Horizontal"
