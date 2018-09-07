@@ -7,25 +7,28 @@
         
             
         <StackLayout BackgroundColor="White">
-         <TableView HasUnevenRows="true">
+         <TableView HasUnevenRows="true" BackgroundColor="Silver">
                     <TableView.Root>
-                        <TableSection Title="　　　　">
+                        <TableSection Title="　　　　" >
                             <ViewCell >
-                            <StackLayout Orientation="Vertical" VerticalOptions="Start">
-                            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-                                <Entry WidthRequest="60"/>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Start" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="0,22,0,22" >
+                                    
+                                </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="0,0,0,22" >
+                                <Entry WidthRequest="60" HeightRequest="40"/>
                                 <Label Text="年間"/>
-                                <Entry WidthRequest="60"/>
+                                <Entry WidthRequest="60" HeightRequest="40"/>
                                 <Label Text="ヶ月間"/>
-                                <Entry WidthRequest="60"/>
+                                <Entry WidthRequest="60" HeightRequest="40"/>
                                 <Label Text="週間"/>
                             </StackLayout>
-                                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-                                    <Entry WidthRequest="60"/>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="0,0,0,22">
+                                    <Entry WidthRequest="60" HeightRequest="40"/>
                                     <Label Text="日間"/>
-                                    <Entry WidthRequest="60"/>
+                                    <Entry WidthRequest="60" HeightRequest="40"/>
                                     <Label Text="時間"/>
-                                    <Entry WidthRequest="60"/>
+                                    <Entry WidthRequest="60" HeightRequest="40"/>
                                     <Label Text="分間"/>
                                 </StackLayout>
                                 </StackLayout>
@@ -35,26 +38,26 @@
                         
                         <TableSection Title="　　　　">
                         <ViewCell>
-                            <Entry Placeholder="管理名" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="管理名" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                         <ViewCell>
-                            <Entry Placeholder="一言コメント" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="一言コメント" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                             
                         </TableSection>
                         
                         <TableSection Title="　　　　">
                           <ViewCell>
-                            <Entry Placeholder="出身校(大学・専門学校)" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="出身校(大学・専門学校)" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                          <ViewCell>
-                            <Entry Placeholder="出身校(高等学校)" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="出身校(高等学校)" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                         <ViewCell>
-                            <Entry Placeholder="出身校(中学校)" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="出身校(中学校)" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                         <ViewCell>
-                            <Entry Placeholder="出身校(小学校)" MaxLength="20" HeightRequest="40"/>
+                            <Entry Placeholder="出身校(小学校)" MaxLength="20" HeightRequest="40" BackgroundColor="White"/>
                         </ViewCell>
                         </TableSection>
                     </TableView.Root>
