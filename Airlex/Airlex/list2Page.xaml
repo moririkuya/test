@@ -1,5 +1,69 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Airlex.list2Page">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Airlex.list2Page"
+             BackgroundColor="Gray">
     <ContentPage.Content>
+        
+            
+        <StackLayout BackgroundColor="White">
+         <TableView HasUnevenRows="true">
+                    <TableView.Root>
+                        <TableSection Title="　　　　">
+                            <ViewCell >
+                            <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                                <Entry WidthRequest="60"/>
+                                <Label Text="年間"/>
+                                <Entry WidthRequest="60"/>
+                                <Label Text="ヶ月間"/>
+                                <Entry WidthRequest="60"/>
+                                <Label Text="週間"/>
+                            </StackLayout>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                                    <Entry WidthRequest="60"/>
+                                    <Label Text="日間"/>
+                                    <Entry WidthRequest="60"/>
+                                    <Label Text="時間"/>
+                                    <Entry WidthRequest="60"/>
+                                    <Label Text="分間"/>
+                                </StackLayout>
+                                </StackLayout>
+                            
+                            </ViewCell>
+                        </TableSection>
+                        
+                        <TableSection Title="　　　　">
+                        <ViewCell>
+                            <Entry Placeholder="管理名" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Entry Placeholder="一言コメント" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                            
+                        </TableSection>
+                        
+                        <TableSection Title="　　　　">
+                          <ViewCell>
+                            <Entry Placeholder="出身校(大学・専門学校)" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                         <ViewCell>
+                            <Entry Placeholder="出身校(高等学校)" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Entry Placeholder="出身校(中学校)" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Entry Placeholder="出身校(小学校)" MaxLength="20" HeightRequest="40"/>
+                        </ViewCell>
+                        </TableSection>
+                    </TableView.Root>
+                   
+                    
+                </TableView>
+                       
+                
+                </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
