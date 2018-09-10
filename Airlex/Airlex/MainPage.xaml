@@ -14,9 +14,9 @@
         >
         <!-- Place new controls here -->
        
-        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14"/>
-        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14"/>
-        <Entry x:Name="passEC" IsEnabled="true" Placeholder="パスワード(確認)" FontSize="14"/>
+        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text=""/>
+        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text=""/>
+        <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text=""/>
         
         <StackLayout x:Name="kiyakuSL"
                      Orientation="Horizontal"
@@ -30,7 +30,7 @@
             <Label Text="に同意" FontSize="Small" />
         </StackLayout>
         
-        <Button Clicked="Mypagego"
+        <Button x:Name="MypageB" Clicked="Mypagego" 
             Text="登録して始める" VerticalOptions="End" 
                 TextColor="White" BackgroundColor="Gray"/>
         <StackLayout

@@ -13,7 +13,7 @@ namespace Airlex
     public partial class MainPage : ContentPage
     {
 
-
+        
         public MainPage()
         {
             InitializeComponent();
@@ -37,16 +37,19 @@ namespace Airlex
             privacyB.FontSize = FS;
 
 
+
         }
 
 
-        private async void Mypagego(object sender, EventArgs e)
-        {
-            
-            await this.Navigation.PushAsync(new MyPage());
+        async void Mypagego(object sender, EventArgs e)
+        { 
+            if ((addressE.Text != string.Empty) && (passE.Text != string.Empty) && (passEC.Text == passE.Text) && (passE.Text.Length >= 4))
+            {
+                await this.Navigation.PushAsync(new MyPage());
+            }
         }
-       
 
 
     }
+
 }

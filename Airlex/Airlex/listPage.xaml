@@ -10,12 +10,15 @@
             
         <StackLayout BackgroundColor="White">
             <ContentView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,1,1,1">
-        <ListView x:Name="list" ItemsSource="{Binding}" HasUnevenRows="false" RowHeight="60">
+        <ListView x:Name="list" ItemsSource="{Binding}" HasUnevenRows="false"  >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell Text="{Binding name}" ImageSource="{Binding faceV}" TextColor="Black"/>
+                    <ImageCell Text="{Binding name}" ImageSource="{Binding faceV}" TextColor="Black" />
                 </DataTemplate>
             </ListView.ItemTemplate>
+                        <ListView.Footer>
+                            <BoxView HeightRequest="0"></BoxView>
+                        </ListView.Footer>
         </ListView>
                 </ContentView>
             </StackLayout>

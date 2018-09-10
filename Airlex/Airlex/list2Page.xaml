@@ -13,7 +13,7 @@
                             <ViewCell >
                             <StackLayout Orientation="Vertical" VerticalOptions="Start" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="0,22,0,22" >
-                                    
+                                  
                                 </StackLayout>
                             <StackLayout Orientation="Horizontal" VerticalOptions="Start" Padding="0,0,0,22" >
                                 <Entry WidthRequest="60" HeightRequest="40"/>
