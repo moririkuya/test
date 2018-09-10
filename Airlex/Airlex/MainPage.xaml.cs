@@ -13,11 +13,12 @@ namespace Airlex
     public partial class MainPage : ContentPage
     {
 
-        
+
         public MainPage()
         {
             InitializeComponent();
-            Double FS = 0;
+            this.BindingContext = new ViewModels.MainViewModel();
+                Double FS = 0;
 
             switch (Device.RuntimePlatform)
             {
@@ -36,18 +37,9 @@ namespace Airlex
             kiyakuB.FontSize = FS;
             privacyB.FontSize = FS;
 
-
-
         }
 
 
-        async void Mypagego(object sender, EventArgs e)
-        { 
-            if ((addressE.Text != string.Empty) && (passE.Text != string.Empty) && (passEC.Text == passE.Text) && (passE.Text.Length >= 4))
-            {
-                await this.Navigation.PushAsync(new MyPage());
-            }
-        }
 
 
     }

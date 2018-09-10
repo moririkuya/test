@@ -49,8 +49,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)RadioButton.xaml.cs">
       <DependentUpon>RadioButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BasePages\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\tourokuB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\tourokuBu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)image\" />
+    <Folder Include="$(MSBuildThisFileDirectory)BasePages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Commands\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
 </Project>

@@ -2,10 +2,13 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:local="clr-namespace:Airlex" 
+    xmlns:viewModels="clr-namespace:Airlex.ViewModels;" 
     x:Class="Airlex.MainPage"
     BackgroundColor="White"
     BackgroundImage="">
+    <ContentPage.BindingContext>
+        <viewModels:MainViewModel />        
+    </ContentPage.BindingContext>
     <StackLayout
         Spacing="10"
         Padding="30,100,20,20"
@@ -14,7 +17,7 @@
         >
         <!-- Place new controls here -->
        
-        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text=""/>
+        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text="{Binding EMaddress,Mode=Default}"/>
         <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text=""/>
         <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text=""/>
         
@@ -30,7 +33,7 @@
             <Label Text="に同意" FontSize="Small" />
         </StackLayout>
         
-        <Button x:Name="MypageB" Clicked="Mypagego" 
+        <Button Command="{Binding tourokuB}" 
             Text="登録して始める" VerticalOptions="End" 
                 TextColor="White" BackgroundColor="Gray"/>
         <StackLayout
