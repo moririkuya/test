@@ -18,8 +18,8 @@
         <!-- Place new controls here -->
        
         <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text="{Binding EMaddress,Mode=Default}"/>
-        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text=""/>
-        <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text=""/>
+        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text="{Binding PassW,Mode=Default}"/>
+        <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text="{Binding PassWC,Mode=Default}"/>
         
         <StackLayout x:Name="kiyakuSL"
                      Orientation="Horizontal"

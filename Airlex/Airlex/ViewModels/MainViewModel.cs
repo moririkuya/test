@@ -9,6 +9,8 @@ namespace Airlex.ViewModels
     internal class MainViewModel : ViewModelBase
     {
         private string _emaddress;
+        private string _passW;
+        private string _passWC;
         public Command tourokuB { get; set; }
         public string EMaddress
         {
@@ -17,9 +19,32 @@ namespace Airlex.ViewModels
             {
                 this._emaddress = value;
                 this.OnPropertyChanged(nameof(EMaddress));
-                ///tourokuB.ChangeCanExecute();
+                tourokuB.ChangeCanExecute();
             }
         }
+
+        public string PassW
+        {
+            get { return _passW; }
+            set
+            {
+                this._passW = value;
+                this.OnPropertyChanged(nameof(PassW));
+                tourokuB.ChangeCanExecute();
+            }
+        }
+
+        public string PassWC
+        {
+            get { return _passWC; }
+            set
+            {
+                this._passWC = value;
+                this.OnPropertyChanged(nameof(PassWC));
+                tourokuB.ChangeCanExecute();
+            }
+        }
+
 
         public MainViewModel()
         {
@@ -32,7 +57,7 @@ namespace Airlex.ViewModels
                 }
             }, canExecute);
         }
-        bool canExecute() { return !string.IsNullOrEmpty(EMaddress); }
+        bool canExecute() { return !string.IsNullOrEmpty(EMaddress) && !string.IsNullOrEmpty(PassW) && !string.IsNullOrEmpty(PassWC) && PassWC == PassW ; }
 
         private void Increment()
         {

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Airlex.ViewModels;"
+             x:Class="Airlex.namewrite"
+             BackgroundColor="white">
+    <ContentPage.BindingContext>
+        <viewModels:namewriteViewModel />
+    </ContentPage.BindingContext>
+    
+        
+        <StackLayout BackgroundColor="White">
+         <TableView HasUnevenRows="true" BackgroundColor="Silver">
+                    <TableView.Root>
+                        <TableSection Title="名前" >
+                            <ViewCell >
+                            <Entry Placeholder="名前(必須)" 
+                                   Text="{Binding nameW,Mode=Default}" 
+                                   BackgroundColor="White"/>
+                        </ViewCell>   
+                        
+                        </TableSection>
+                        
+                        <TableSection Title="性別">
+                        <ViewCell >
+                            <Picker BackgroundColor="White" 
+                                    ItemsSource="{Binding PrefDataSets}"
+                                    
+                                    SelectedItem="{Binding selectedData}"/>
+                        </ViewCell>
+                        
+                        </TableSection>
+                    
+                    <TableSection Title="生年月日">
+                        <ViewCell >
+                            <DatePicker 
+                                BackgroundColor="White"
+                                Date="{Binding selectD}"
+                                />
+                                        
+                        </ViewCell>
+                        
+                        </TableSection>
+                
+                <TableSection Title="年齢">
+                        <ViewCell >
+                            <Label Text="{Binding nenrei}" TextColor="Black" BackgroundColor="White" />
+                                        
+                        </ViewCell>
+                        
+                        </TableSection>
+               
+                
+                    <TableSection Title="　">
+                    <ViewCell>
+                        <Button Text="送信" TextColor="White" 
+                                Command="{Binding namesendB}" 
+                                BackgroundColor="Fuchsia"/>    
+                        
+                    </ViewCell>
+                </TableSection>
+                   
+                    </TableView.Root>
+                   
+                    
+                </TableView>
+                       
+                
+                </StackLayout>
+    
+</ContentPage>

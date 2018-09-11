@@ -11,7 +11,7 @@ namespace Airlex
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MainPage());
+            MainPage = new NavigationPage (new namewrite());
         }
 
         protected override void OnStart()
