@@ -36,6 +36,7 @@
                             <DatePicker 
                                 BackgroundColor="White"
                                 Date="{Binding selectD}"
+                                
                                 />
                                         
                         </ViewCell>

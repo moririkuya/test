@@ -61,6 +61,7 @@
       <DependentUpon>namewrite.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\namewriteViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\nanewrite.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)image\" />

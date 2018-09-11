@@ -15,7 +15,11 @@ namespace Airlex.ViewModels
         private string _nameW;
         private string _selecteddata;
         private DateTime _selectd = DateTime.Now;
-        private DateTime _now = DateTime.Now; 
+        private DateTime _now = DateTime.Now;
+        public int nenrei 
+        {
+            get => _now.Year - selectD.Year;
+        }
         public Command namesendB { get; set; }
 
 
@@ -57,9 +61,12 @@ namespace Airlex.ViewModels
             {
                 this._selectd = value;
                 this.OnPropertyChanged(nameof(selectD));
+                this.OnPropertyChanged(nameof(nenrei));
                 namesendB.ChangeCanExecute();
             }
+            
         }
+
 
 
 
