@@ -6,8 +6,6 @@ using Airlex.Models;
 using Xamarin.Forms;
 
 
-
-
 namespace Airlex.ViewModels
 {
     internal class namewriteViewModel : ViewModelBase
@@ -68,8 +66,6 @@ namespace Airlex.ViewModels
         }
 
 
-
-
         public namewriteViewModel()
         {
 
@@ -77,23 +73,33 @@ namespace Airlex.ViewModels
             namesendB = new Command(() =>
             {
                 System.Diagnostics.Debug.WriteLine("name : " + nameW + " selectedData : " + selectedData + " date :" + selectD);
-                Increment();
-                Increment2();
+                user.Incriment(_nameW,_selecteddata,selectD);
+                //Increment();
+                //Increment2();
+                //Increment3();
             });
 
 
 
 
         }
-        private void Increment()
-        {
-            _nameW = user.Incriment(_nameW);
-        }
+        //private void Increment()
+        //{
+        //    _nameW = user.Incriment(_nameW);
 
-         private void Increment2()
-        {
-            selectedData = user.Incriment2(_selecteddata);
-        }
+        //}
+
+        //private void Increment2()
+        //{
+
+        //    selectedData = user.Incriment2(_selecteddata);
+        //}
+
+        //private void Increment3()
+        //{
+
+        //    selectD = user.Increment3(selectD);
+        //}
     }
 }
 
