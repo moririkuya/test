@@ -72,16 +72,28 @@ namespace Airlex.ViewModels
 
         public namewriteViewModel()
         {
+
+
             namesendB = new Command(() =>
             {
                 System.Diagnostics.Debug.WriteLine("name : " + nameW + " selectedData : " + selectedData + " date :" + selectD);
+                Increment();
+                Increment2();
             });
 
 
+
+
+        }
+        private void Increment()
+        {
+            _nameW = user.Incriment(_nameW);
         }
 
-
-
+         private void Increment2()
+        {
+            selectedData = user.Incriment2(selectedData);
+        }
     }
 }
 
