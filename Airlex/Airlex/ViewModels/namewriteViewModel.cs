@@ -92,7 +92,7 @@ namespace Airlex.ViewModels
 
          private void Increment2()
         {
-            selectedData = user.Incriment2(selectedData);
+            selectedData = user.Incriment2(_selecteddata);
         }
     }
 }

@@ -26,7 +26,7 @@
                             <Picker BackgroundColor="White" 
                                     ItemsSource="{Binding PrefDataSets}"
                                     
-                                    SelectedItem="{Binding selectedData}"/>
+                                    SelectedItem="{Binding selectedData,Mode=Default}"/>
                         </ViewCell>
                         
                         </TableSection>
