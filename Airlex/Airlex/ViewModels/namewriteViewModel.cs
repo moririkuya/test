@@ -33,6 +33,7 @@ namespace Airlex.ViewModels
                 this._nameW = value;
                 this.OnPropertyChanged(nameof(nameW));
                 namesendB.ChangeCanExecute();
+
             }
         }
 
@@ -65,41 +66,45 @@ namespace Airlex.ViewModels
             
         }
 
-
+        public user user { get; set; }
         public namewriteViewModel()
         {
+            user = new user
+            {
+                Name = "test",
+
+            };
 
 
             namesendB = new Command(() =>
             {
+                string _selectdata2 ;
+
+                if (_selecteddata == "男")
+                {
+                    _selectdata2 = "1";
+                }
+                else if (_selecteddata == "女")
+                {
+                    _selectdata2 = "2";
+                }
+                else if (_selecteddata == "その他")
+                {
+                    _selectdata2 = "3";
+                }
+                else
+                    _selectdata2 = "0";
+
                 System.Diagnostics.Debug.WriteLine("name : " + nameW + " selectedData : " + selectedData + " date :" + selectD);
-                user.Incriment(_nameW,_selecteddata,selectD);
-                //Increment();
-                //Increment2();
-                //Increment3();
+
+
+                user.Incriment(_nameW,_selectdata2,selectD);
+
+
             });
 
-
-
-
         }
-        //private void Increment()
-        //{
-        //    _nameW = user.Incriment(_nameW);
 
-        //}
-
-        //private void Increment2()
-        //{
-
-        //    selectedData = user.Incriment2(_selecteddata);
-        //}
-
-        //private void Increment3()
-        //{
-
-        //    selectD = user.Increment3(selectD);
-        //}
     }
 }
 

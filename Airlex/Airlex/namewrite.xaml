@@ -2,12 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:Airlex.ViewModels;"
+             xmlns:local="clr-namespace:Airlex;" 
              x:Class="Airlex.namewrite"
              BackgroundColor="white">
+    
+
+    
     <ContentPage.BindingContext>
         <viewModels:namewriteViewModel />
     </ContentPage.BindingContext>
     
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:textcolor_length x:Key="LengthConverter"/>                
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   
         
         <StackLayout BackgroundColor="White">
          <TableView HasUnevenRows="true" BackgroundColor="Silver">
@@ -15,8 +25,11 @@
                         <TableSection Title="名前" >
                             <ViewCell >
                             <Entry Placeholder="名前(必須)" 
-                                   Text="{Binding nameW,Mode=Default}" 
-                                   BackgroundColor="White"/>
+                                   Text="{Binding user.Name,Mode=Default}"
+                                   BackgroundColor="White"
+                                 
+                                   TextColor="{Binding user.Name,Mode=TwoWay,Converter={StaticResource LengthConverter}}"
+                                   />
                         </ViewCell>   
                         
                         </TableSection>

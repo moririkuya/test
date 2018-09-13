@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\namewriteViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\user.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\textcolor_length.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)image\" />
@@ -69,5 +70,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Commands\" />
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ValueConverter\" />
   </ItemGroup>
 </Project>

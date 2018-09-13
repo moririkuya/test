@@ -3,12 +3,21 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:viewModels="clr-namespace:Airlex.ViewModels;" 
+    xmlns:local="clr-namespace:Airlex;" 
     x:Class="Airlex.MainPage"
     BackgroundColor="White"
     BackgroundImage="">
     <ContentPage.BindingContext>
         <viewModels:MainViewModel />        
     </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="entrycolor" TargetType="Entry">
+                <Setter Property="TextColor" Value="red"/>
+                <Setter Property="BackgroundColor" Value="#D9D9D9"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <StackLayout
         Spacing="10"
         Padding="30,100,20,20"
@@ -17,9 +26,9 @@
         >
         <!-- Place new controls here -->
        
-        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text="{Binding EMaddress,Mode=Default}"/>
-        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text="{Binding PassW,Mode=Default}"/>
-        <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text="{Binding PassWC,Mode=Default}"/>
+        <Entry x:Name="addressE"  Placeholder="メールアドレス" FontSize="14" Text="{Binding EMaddress,Mode=Default}" Style="{StaticResource entrycolor}"/>
+        <Entry x:Name="passE" IsPassword="true" Placeholder="パスワード" FontSize="14" Text="{Binding PassW,Mode=Default}" Style="{StaticResource entrycolor}"/>
+        <Entry x:Name="passEC" IsPassword="true" Placeholder="パスワード(確認)" FontSize="14" Text="{Binding PassWC,Mode=Default}" Style="{StaticResource entrycolor}"/>
         
         <StackLayout x:Name="kiyakuSL"
                      Orientation="Horizontal"
