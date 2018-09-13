@@ -9,10 +9,10 @@ namespace Airlex
     {
         public App()
         {
+
             InitializeComponent();
-#if DEBUG
-            MainPage = new NavigationPage (new MainPage());
-#endif
+
+            MainPage = new NavigationPage (new DependencyS());
         }
 
         protected override void OnStart()

@@ -33,6 +33,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)DependencyS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -63,6 +67,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\namewriteViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\user.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ValueConverter\textcolor_length.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyS.xaml.cs">
+      <DependentUpon>DependencyS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\dependencyserviceE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAssemblyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)image\" />
