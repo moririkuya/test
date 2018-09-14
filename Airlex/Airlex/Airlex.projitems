@@ -37,6 +37,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CirclePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SwitchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -72,6 +80,14 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\dependencyserviceE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IAssemblyService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CirclePage.xaml.cs">
+      <DependentUpon>CirclePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Renderer\ExBoxView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SwitchPage.xaml.cs">
+      <DependentUpon>SwitchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\switchcolor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)image\" />
@@ -80,5 +96,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
     <Folder Include="$(MSBuildThisFileDirectory)ValueConverter\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Renderer\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
   </ItemGroup>
 </Project>
